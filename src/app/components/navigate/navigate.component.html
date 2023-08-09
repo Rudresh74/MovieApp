@@ -1,0 +1,24 @@
+<div class="navigate">
+  <ul class="flex justify-between">
+
+    <li class="lg:opacity-0">
+      <a routerLink="/">
+        <img ngSrc="/assets/images/arrow-left.svg" alt="" height="20" width="20"/>
+      </a>
+    </li>
+    <li>
+      <p class="text-white text-md">{{ title }}</p>
+    </li>
+    <li class="bookmark cursor-pointer" *ngIf="movie">
+      <img
+        class="w-[18px] h-[22px]"
+        [src]="getBookmarkIcon(movie.id)"
+        alt=""
+        (click)="toggleBookmark(movie.id)"
+      />
+    </li>
+    <li *ngIf="!movie">
+
+    </li>
+  </ul>
+</div>

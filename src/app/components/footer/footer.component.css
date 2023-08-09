@@ -1,0 +1,17 @@
+.bg-main {
+  background: #242A32;
+}
+
+a {
+  @apply text-blue-500 opacity-50;
+}
+
+a.active p {
+  color: #0296E5;
+}
+
+
+
+.footer {
+  @apply  border-t border-blue-500;
+}

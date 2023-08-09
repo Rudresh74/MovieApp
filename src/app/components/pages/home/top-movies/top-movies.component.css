@@ -1,0 +1,31 @@
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.slider-container {
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  flex-wrap: nowrap;
+  transition: transform 0.3s ease;
+}
+
+.slide {
+  flex: 0 0 33.33%; /* Laptop için her satırda 3 tane slayt */
+  max-width: 33.33%; /* Laptop için her satırda 3 tane slayt */
+  padding: 0 5px;
+}
+
+@media (max-width: 767px) {
+  .slide {
+    flex: 0 0 50%; /* Mobil için her satırda 2 tane slayt */
+    max-width: 50%; /* Mobil için her satırda 2 tane slayt */
+  }
+}
