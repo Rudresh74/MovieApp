@@ -5,5 +5,7 @@ Welcome to MovieApp! This is a dynamic and clean code project developed using An
 > 
 > 📢 This project is designed for mobile view but includes responsive design. I recommend you to use it in mobile view
 > 
-> 📢 Don't forget to configure the `environment.ts` file to run the application locally!
+> 📢 Don't forget to configure the `env` file to run the application locally!
+> Add your own MOVIEDB_API_KEY &  MOVIEDB_API_ACCESS_TOKEN in .env file
+
 
